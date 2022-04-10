@@ -90,7 +90,6 @@ def main():
     question_bytes += qclass.to_bytes(2, 'big')
 
     request_bytes = message_header_bytes + question_bytes
-    print(request_bytes)
 
     # Send request message to server
     # (Tip: Use sendto() function for UDP)
